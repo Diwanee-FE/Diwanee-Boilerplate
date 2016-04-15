@@ -1,0 +1,42 @@
+//-------------------------
+//--------------BASE CONFIG
+//-------------------------
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+}
+
+::selection          { color: $colorWhite; background-color: lighten($colorBlack,15%); } // NORMAL
+::-moz-selection     { color: $colorWhite; background-color: lighten($colorBlack,15%); } // FIREFOX
+::-webkit-selection  { color: $colorWhite; background-color: lighten($colorBlack,15%); } // WEBKIT
+
+html {
+	overflow-y: scroll;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+a {
+    outline: none;
+}
+
+// WEBKIT HACKS
+html { -webkit-font-smoothing: antialiased; } // ugly Mac OS fonts rendering
+input,
+textarea,
+select { box-sizing: inherit; } // user agent stylesheet default is box-sizing: border-box
+
+// WEBKIT CUSTOM input[type=search]
+input[type="search"] { -webkit-appearance: textfield !important; }
+input[type="search"]::-webkit-search-cancel-button { display: none; }

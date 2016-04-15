@@ -1,0 +1,16 @@
+//--------------------------
+//----------------CALC MIXIN
+//--------------------------
+
+/* EXAMPLE
+*
+*	@include calc (width, "100% - 3rem");
+*		MUST USE QUOTES ON VALUE
+*/
+
+@mixin calc ($attr, $params) {
+	#{$attr}: -webkit-calc(#{$params});
+	#{$attr}:    -moz-calc(#{$params});
+	#{$attr}: 	   -o-calc(#{$params});
+	#{$attr}: 	      calc(#{$params});
+}

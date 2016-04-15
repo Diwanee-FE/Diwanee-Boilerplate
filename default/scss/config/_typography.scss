@@ -1,0 +1,37 @@
+//-------------------------
+//---------------TYPOGRAPHY
+//-------------------------
+
+//------FONT-FACE
+@include fontFace (Gotham, gotham-light);
+
+//------FONT SIZES
+html {
+    $fontSizePX: $baseFontSize + 'px';
+    font-size  : #{$fontSizePX};
+
+    @include breakpoint (tablet) {
+        $fontSizePX: $baseFontSize / 1.2 + 'px';
+        font-size  : #{$fontSizePX};
+    }
+    @include breakpoint (phone) {
+        $fontSizePX: $baseFontSize / 2 + 'px';
+        font-size  : #{$fontSizePX};
+    }
+}
+body {
+    font-size: 100%;
+}
+
+//------STYLES
+b,
+strong {
+    font-weight: bold;
+}
+i,
+em {
+    font-style: italic;
+}
+u {
+    text-decoration: underline;
+}

@@ -1,0 +1,83 @@
+/*
+* 1 - Display attributes
+*     - Ordered as how the box model orders them. Display > Width > Height > Padding > Margin
+* 2 - Position attributes
+*    - Position > Top > Right > Bottom > Left > Z-index
+* 3 - Transforms
+* 4 - Background and Borders
+*    - If the class has a changing background image but not color, break up the background into background-color, background-image. So as to change only one value.
+* 5 - Font styling
+*    - Every attribute that effects the rendering of the font is in this group
+*    - Group properties together; font-size, font-family, font-weight;
+* 6 - Transitions
+* 7 - Hover, Active, Focus and Visited events
+* 8 - Media queries for this class
+* 9 - Nest classes/id's to MAX 3 levels
+*    - Parent > Child > Grandchild; If possible, do not nest further then grandchild
+* 10 - For colors, dimensions, img and font paths and other common things, use variables
+* 11 - For CSS3 properties that require prefixes, create mixins and use them instead of manually typing
+*/
+
+/*--------
+* Variables and mixins were not used in the styleguide so as not to overcrowd the example code
+--------*/
+.class {
+    display              : block;
+    width                : 100px;
+    max-width            : 500px;
+    height               : 100px;
+    max-height           : 500px;
+    padding              : 1em; // Padding in EM
+    margin               : 10rem auto; // Margin in REM
+
+    position             : absolute;
+    top                  : 0;
+    right                : 0;
+    bottom               : 0;
+    left                 : 0;
+    z-index              : 10;
+
+    // Use adequate mixin for anything with prefixes
+    -webkit-transform    : scaleX(1.2) scaleY(0.9);
+            transform    : scaleX(1.2) scaleY(0.9);
+
+    border-color         : #000;
+    border-style         : dashed;
+    border-size          : 1px 0 2px 0;
+    border-radius        : 10em;
+
+    background-size      : cover;
+    background-color     : #FA0;
+    background-image     : url('https://placehold.it/200x200');
+    background-position  : center;
+    background-attachment: scroll;
+
+    color                : #F0A;
+    font-size            : 2rem; // Size in REM
+    font-weight          : 700;
+    font-family          : Tahoma;
+    line-height          : 1.2; // Line height relative to font-size
+    letter-spacing       : 0.07em; // Letter spacing relative to font-size, in EM units
+    text-transform       : uppercase;
+    text-decoration      : none;
+
+    transition           : all 0.3s ease-in-out;
+
+    &:hover,
+    &:active,
+    &:focus,
+    &:visited {
+        // Use variable for color values and any other commonly repeated value
+        color: #0FA;
+    }
+    @media (min-width: 320px) and (max-width: 1023px) and (orientation: vertical) {
+        background-color: #CAF;
+    }
+    .child {
+        font-size: 2.1rem;
+        .grandchild {
+            // DO NOT NEST FURTHER THEN THIS CHILD (If possible)
+            padding: 2em;
+        }
+    }
+}

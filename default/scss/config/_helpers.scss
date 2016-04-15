@@ -1,0 +1,49 @@
+//-------------------------
+//------------------HELPERS
+//-------------------------
+.clearfix {
+    *zoom: 1;
+    &::before, &::after {
+        content: "";
+        display: table;
+    }
+    &::after {
+        clear: both;
+    }
+}
+.clear           { clear: both; }
+
+// ACCESSIBLE HIDDEN
+.invisible {
+    width      : 1px;
+    height     : 1px;
+
+    position   : absolute;
+    left       : 0;
+
+    text-indent: -5000px;
+
+    overflow   : hidden;
+}
+
+.hide            { display: none; }
+.block           { display: block; }
+.inline-block    { display: inline-block; }
+
+.fleft           { float: left; }
+.fright          { float: right; }
+
+.fixed           { position: fixed; }
+.relative        { position: relative; }
+.absolute        { position: absolute; }
+
+.vertical-top    { vertical-align: top; }
+.vertical-middle { vertical-align: middle; }
+
+.table           { display: table; }
+.table-row       { display: table-row; }
+.table-cell      { display: table-cell; }
+
+.uppercase       { text-transform: uppercase; }
+.lowercase       { text-transform: lowercase; }
+.capitalize      { text-transform: capitalize; }

@@ -1,0 +1,18 @@
+//-------------------------
+//------BORDER RADIUS MIXIN
+//-------------------------
+
+/* EXAMPLE
+*
+*    @include borderRadius (10em 1em 3em 2px);
+*    @include borderRadius (3em);
+*/
+
+@mixin borderRadius ($params: 10px) {
+    -webkit-border-radius: $params;
+     -khtml-border-radius: $params;
+       -moz-border-radius: $params;
+        -ms-border-radius: $params;
+         -o-border-radius: $params;
+            border-radius: $params;
+}

@@ -1,0 +1,14 @@
+//---------------------------------
+//----------INPUT PLACEHOLDER MIXIN
+//---------------------------------
+
+/* EXAMPLE
+*
+*    input { @include inputPlaceholder { color: #FA0; } }
+*/
+
+@mixin inputPlaceholder {
+    &::-webkit-input-placeholder { @content; }
+        &::-ms-input-placeholder { @content; }
+             &::-moz-placeholder { @content; }
+}
