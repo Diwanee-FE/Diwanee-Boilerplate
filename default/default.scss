@@ -1,6 +1,6 @@
 /*------------------------------------------------------------------------------
 *    CSS Document (http://www.w3.org/Style/CSS/)
-*    For STYLEGUIDE, reffer to /config/_styleguide.less
+*    For STYLEGUIDE, reffer to /config/_styleguide.scss
 -----------------------------------------------------------------------------*/
 
 //------ALL VARIABLES
@@ -44,10 +44,3 @@
 
 //------IE FIXES
 @import "scss/ie/ie";
-
-
-div {
-    @include calc (width, "100% - 2px");
-    @include transition;
-    font-family: $mainFont;
-}
