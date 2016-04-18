@@ -38,8 +38,7 @@
     z-index              : 10;
 
     // Use adequate mixin for anything with prefixes
-    -webkit-transform    : scaleX(1.2) scaleY(0.9);
-            transform    : scaleX(1.2) scaleY(0.9);
+    @include transform (scaleX(1.2) scaleY(0.9));
 
     border-color         : #000;
     border-style         : dashed;
@@ -51,6 +50,8 @@
     background-image     : url('https://placehold.it/200x200');
     background-position  : center;
     background-attachment: scroll;
+
+    opacity              : 1;
 
     color                : #F0A;
     font-size            : 2rem; // Size in REM

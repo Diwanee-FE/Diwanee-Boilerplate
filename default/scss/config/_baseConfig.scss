@@ -9,9 +9,9 @@
     -webkit-margin-after: 0;
 }
 
-::selection          { color: $colorWhite; background-color: lighten($colorBlack,15%); } // NORMAL
-::-moz-selection     { color: $colorWhite; background-color: lighten($colorBlack,15%); } // FIREFOX
-::-webkit-selection  { color: $colorWhite; background-color: lighten($colorBlack,15%); } // WEBKIT
+::selection          { color: $colorWhite; background-color: lighten($colorBlack, 15%); } // NORMAL
+::-moz-selection     { color: $colorWhite; background-color: lighten($colorBlack, 15%); } // FIREFOX
+::-webkit-selection  { color: $colorWhite; background-color: lighten($colorBlack, 15%); } // WEBKIT
 
 html {
 	overflow-y: scroll;
@@ -29,6 +29,7 @@ img {
 
 a {
     outline: none;
+    text-decoration: none;
 }
 
 // WEBKIT HACKS

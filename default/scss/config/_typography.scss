@@ -11,7 +11,7 @@ html {
     font-size  : #{$fontSizePX};
 
     @include breakpoint (tablet) {
-        $fontSizePX: $baseFontSize / 1.2 + 'px';
+        $fontSizePX: $baseFontSize / 1.5 + 'px';
         font-size  : #{$fontSizePX};
     }
     @include breakpoint (phone) {
@@ -23,7 +23,7 @@ body {
     font-size: 100%;
 }
 
-//------STYLES
+//------DEFAULT STYLES
 b,
 strong {
     font-weight: bold;
@@ -34,4 +34,30 @@ em {
 }
 u {
     text-decoration: underline;
+}
+
+//------STYLES
+h1 {
+
+}
+h2 {
+
+}
+h3 {
+
+}
+h4 {
+
+}
+h5 {
+
+}
+h6 {
+
+}
+p {
+
+}
+span {
+
 }

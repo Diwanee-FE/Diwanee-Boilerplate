@@ -8,6 +8,7 @@ $colorBlack: #000;
 $colorRed  : #F00;
 $colorGreen: #0F0;
 $colorBlue : #00F;
+$colorMain : $colorWhite;
 
 //-----PATHS
 $fontBaseUrl   : "http://static1.webedia.fr/fonts/";
@@ -25,7 +26,7 @@ $desktop--large  : 1600px;
 
 $toPhone--small  : 479px;
 $toTablet        : 767px;
-$toDesktop       : 1023px;
+$toDesktop       : 1024px;
 $toDesktop--large: 1599px;
 
 //------FONTS

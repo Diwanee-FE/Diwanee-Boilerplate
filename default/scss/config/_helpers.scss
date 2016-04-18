@@ -1,20 +1,18 @@
 //-------------------------
 //------------------HELPERS
 //-------------------------
-.clearfix {
+%clearfix {
     *zoom: 1;
-    &::before, &::after {
+    &:before,
+    &:after {
         content: "";
         display: table;
     }
-    &::after {
+    &:after {
         clear: both;
     }
 }
-.clear           { clear: both; }
-
-// ACCESSIBLE HIDDEN
-.invisible {
+%invisible {
     width      : 1px;
     height     : 1px;
 
@@ -25,6 +23,9 @@
 
     overflow   : hidden;
 }
+
+
+.clear           { clear: both; }
 
 .hide            { display: none; }
 .block           { display: block; }
