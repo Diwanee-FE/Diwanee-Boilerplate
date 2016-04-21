@@ -34,3 +34,8 @@ $baseFont        : Arial, Helvetica, Tahoma, sans-serif;
 $mainFont        : "Gotham", $baseFont;
 $mainFont--bold  : "", $baseFont;
 $mainFont--italic: "", $baseFont;
+
+//------Z INDEX LEVELS
+$levelBottom: 1;
+$levelMiddle: 2;
+$levelTop   : 3;
