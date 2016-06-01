@@ -1,0 +1,46 @@
+/*------------------------------------------------------------------------------
+*    CSS Document (http://www.w3.org/Style/CSS/)
+*    For STYLEGUIDE, reffer to /config/_styleguide.scss
+-----------------------------------------------------------------------------*/
+
+//------ALL VARIABLES
+@import 'config/variables';
+
+//------LIBRARY
+// @import "lib/";
+
+//------MIXINS
+@import 'mixins/breakpoints';
+@import 'mixins/borderRadius';
+@import 'mixins/transition';
+@import 'mixins/transform';
+@import 'mixins/calc';
+@import 'mixins/placeholder';
+@import 'mixins/fontFace';
+
+//------MAIN CONFIG
+@import 'config/reset';
+@import 'config/baseConfig';
+@import 'config/typography';
+@import 'config/helpers';
+
+//------COMPONENTS
+@import 'components/container';
+@import 'components/button';
+@import 'components/navigation/navigation';
+
+//------BLOCKS
+@import 'blocks/header/header';
+@import 'blocks/footer/footer';
+@import 'blocks/article/articles';
+
+//------SLIDERS
+@import 'sliders/slickSlider';
+
+//------PAGES
+@import 'pages/404Page';
+@import 'pages/article/ArticlePage';
+@import 'pages/StaticPage';
+
+//------IE FIXES
+@import 'ie/ie';

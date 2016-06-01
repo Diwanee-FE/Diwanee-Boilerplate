@@ -1,0 +1,23 @@
+{
+  "name": "Diwanee Boilerplate",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Ivan Buljovcic <ivan.buljovcic@diwanee.com>",
+    "Milos Bjelcevic <milos.bjelcevic@diwanee.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/IvanBuljovcic/Diwanee-boiler",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.4",
+    "requirejs": "^2.2.0",
+    "velocity": "^1.2.3"
+  }
+}
