@@ -11,10 +11,12 @@ var minifyHTML   = require('gulp-htmlmin');
 var source       = require('vinyl-source-stream');
 var browserify   = require('browserify');
 var rename       = require('gulp-rename');
-var es           = require('event-stream');
 var $            = require('gulp-load-plugins')();
 var streamify    = require('gulp-streamify');
 
+//==============================
+// PATHS CONFIG
+//==============================
 var config = {
     css: {
         src : './assets/**/*.scss',
@@ -30,6 +32,7 @@ var config = {
         dest: './app/'
     }
 }
+
 //==============================
 // COPY BOWER COMPONENTS
 //==============================
@@ -37,7 +40,6 @@ gulp.task('bower', function() {
     return gulp.src(mainBower())
                 .pipe(gulp.dest('./app/lib'));
 });
-
 
 //==============================
 // COMPILE SCSS/SASS
