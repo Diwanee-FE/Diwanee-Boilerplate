@@ -62,7 +62,7 @@ gulp.task('browserify', function () {
 
 gulp.task('watch', function () {
     gulp.watch(config.css.src, ['sass']);
-    gulp.watch(config.js.src, ['script']);
+    gulp.watch(config.js.src, ['browserify']);
 });
 
 gulp.task('server', function () {
@@ -74,4 +74,4 @@ gulp.task('server', function () {
                 }));
 });
 
-gulp.task('default', ['browserify', 'sass', 'script', 'html', 'watch', 'server']);
+gulp.task('default', ['browserify', 'sass', 'html', 'watch', 'server']);
