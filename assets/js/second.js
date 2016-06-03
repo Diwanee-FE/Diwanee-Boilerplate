@@ -1,7 +1,5 @@
 var $ = require('jquery');
 
 module.exports = function () {
-    console.log($(window).length);
+    console.log('SecondJS');
 }
-
-console.log(1);

@@ -3,7 +3,9 @@ var $ = require('jquery');
 var second = require('./second.js');
 
 console.log($(document).length);
-console.log('das');
+console.log('Suck a dick');
+
+var a = true;
 
 },{"./second.js":2,"jquery":3}],2:[function(require,module,exports){
 var $ = require('jquery');

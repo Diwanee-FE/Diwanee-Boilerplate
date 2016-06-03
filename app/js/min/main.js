@@ -1,1 +1,0 @@
-var $=require("jquery"),second=require("./second.js");console.log($(document).length);

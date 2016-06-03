@@ -1,5 +1,8 @@
-var $ = require('jquery');
+var $      = require('jquery');
 var second = require('./second.js');
 
-console.log($(document).length);
-console.log('das');
+console.log('Main js');
+
+second();
+
+console.log(1267);
