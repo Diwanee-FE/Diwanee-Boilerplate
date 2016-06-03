@@ -1,1 +1,1 @@
-jQuery(document).ready(function(){console.log("Hello world!")});
+var $=require("jquery");console.log($(document).length);

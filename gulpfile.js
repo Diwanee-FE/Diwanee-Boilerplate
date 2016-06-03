@@ -8,6 +8,8 @@ var gutil        = require('gulp-util');
 var webserver    = require('gulp-webserver');
 var mainBower    = require('main-bower-files');
 var minifyHTML   = require('gulp-htmlmin');
+var source       = require('vinyl-source-stream');
+var browserify   = require('browserify');
 
 var config = {
     css: {
@@ -51,6 +53,13 @@ gulp.task('html', function () {
                 .pipe(gulp.dest(config.html.dest));
 });
 
+gulp.task('browserify', function () {
+    return browserify('./assets/js/main.js')
+                .bundle().on('error', gutil.log)
+                .pipe(source('bundle.js'))
+                .pipe(gulp.dest('./assets/js'));
+});
+
 gulp.task('watch', function () {
     gulp.watch(config.css.src, ['sass']);
     gulp.watch(config.js.src, ['script']);
@@ -59,10 +68,10 @@ gulp.task('watch', function () {
 gulp.task('server', function () {
     return gulp.src('./')
                 .pipe(webserver({
-                    port: '1337',
-                    open: true,
+                    port      : '1337',
+                    open      : true,
                     livereload: true
                 }));
 });
 
-gulp.task('default', ['bower', 'sass', 'script', 'html', 'watch', 'server']);
+gulp.task('default', ['browserify', 'sass', 'script', 'html', 'watch', 'server']);
