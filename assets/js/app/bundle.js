@@ -6,8 +6,6 @@ console.log('Main js');
 
 second();
 
-console.log(1267);
-
 },{"./second.js":2,"jquery":3}],2:[function(require,module,exports){
 var $ = require('jquery');
 

@@ -10,6 +10,10 @@ var mainBower    = require('main-bower-files');
 var minifyHTML   = require('gulp-htmlmin');
 var source       = require('vinyl-source-stream');
 var browserify   = require('browserify');
+var rename       = require('gulp-rename');
+var es           = require('event-stream');
+var $            = require('gulp-load-plugins')();
+var streamify    = require('gulp-streamify');
 
 var config = {
     css: {
@@ -17,9 +21,9 @@ var config = {
         dest: './app/css'
     },
     js: {
-        src   : './assets/js/*.js',
+        src   : './assets/js/app.js',
         dest  : './assets/js/app',
-        bundle: './assets/js/app/bundle.js'
+        bundle: './app/js'
     },
     html: {
         src: './index.html',
@@ -49,22 +53,18 @@ gulp.task('sass', function () {
 });
 
 //==============================
-// UGLIFY SCRIPTS
-//==============================
-gulp.task('script', function () {
-    return gulp.src(config.js.bundle)
-                .pipe(uglify().on('error', gutil.log))
-                .pipe(gulp.dest('./app/js/min'));
-});
-
-//==============================
 // BROWSERIFY
 //==============================
-gulp.task('browserify', ['script'], function () {
-    return browserify('./assets/js/main.js')
+gulp.task('browserify', function () {
+    return browserify(config.js.src)
                 .bundle().on('error', gutil.log)
                 .pipe(source('bundle.js'))
-                .pipe(gulp.dest(config.js.dest));
+                .pipe(gulp.dest(config.js.dest))
+
+                // Minify and send to /app/js
+                .pipe($.rename('bundle.min.js'))
+                .pipe($.streamify($.uglify().on('error', gutil.log)))
+                .pipe(gulp.dest(config.js.bundle));
 });
 
 //==============================
@@ -80,6 +80,7 @@ gulp.task('html', function () {
 // WATCH
 //==============================
 gulp.task('watch', function () {
+    gulp.watch(config.html.src, ['html']);
     gulp.watch(config.css.src, ['sass']);
     gulp.watch(config.js.src, ['browserify']);
 });
@@ -99,4 +100,4 @@ gulp.task('server', function () {
 //==============================
 // DEFAULT
 //==============================
-gulp.task('default', ['browserify', 'script', 'sass', 'html', 'watch', 'server']);
+gulp.task('default', ['browserify', 'sass', 'html', 'watch', 'server']);
