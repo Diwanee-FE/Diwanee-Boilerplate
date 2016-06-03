@@ -5,4 +5,5 @@ SCSS only boilerplate for starting new projects
 - Download the project
 - cd into project folder
 - run 'npm install'
+- run 'bower install'
 - run 'gulp' to compile SCSS to CSS
