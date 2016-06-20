@@ -3,6 +3,7 @@ var $             = require('jquery');
 var slickSliderHP = require('./slickHome.js');
 
 console.log('Main js');
+console.log('djas9jdas');
 
 slickSliderHP();
 
@@ -20,6 +21,8 @@ module.exports = function () {
         infinite      : true,
         speed         : 300
     });
+
+    console.log('dasda');
 }
 
 },{"jquery":3,"slick-carousel":4}],3:[function(require,module,exports){

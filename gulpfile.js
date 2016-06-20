@@ -23,9 +23,10 @@ var config = {
         dest: './app/css'
     },
     js: {
-        src   : './assets/js/app.js',
-        dest  : './assets/js/app',
-        bundle: './app/js'
+        src    : './assets/js/src/',
+        srcMain: './assets/js/main.js',
+        dest   : './assets/js/app',
+        bundle : './app/js'
     },
     html: {
         src: './index.html',
@@ -50,7 +51,7 @@ gulp.task('sass', function () {
 // BROWSERIFY
 //==============================
 gulp.task('browserify', function () {
-    return browserify(config.js.src)
+    return browserify(config.js.srcMain)
                 .bundle().on('error', gutil.log)
                 .pipe(source('bundle.js'))
                 .pipe(gulp.dest(config.js.dest))

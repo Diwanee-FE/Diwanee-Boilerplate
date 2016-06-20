@@ -11,6 +11,4 @@ module.exports = function () {
         infinite      : true,
         speed         : 300
     });
-
-    console.log('DIS IS SEKND');
 }

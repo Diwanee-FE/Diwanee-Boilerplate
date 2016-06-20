@@ -1,5 +1,5 @@
 var $             = require('jquery');
-var slickSliderHP = require('./slickHome.js');
+var slickSliderHP = require('./src/slickHome.js');
 
 console.log('Main js');
 
