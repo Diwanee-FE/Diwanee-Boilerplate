@@ -6,13 +6,23 @@ var uglify       = require('gulp-uglify');
 var concat       = require('gulp-concat');
 var gutil        = require('gulp-util');
 var webserver    = require('gulp-webserver');
-var mainBower    = require('main-bower-files');
 var minifyHTML   = require('gulp-htmlmin');
 var source       = require('vinyl-source-stream');
 var browserify   = require('browserify');
 var rename       = require('gulp-rename');
 var $            = require('gulp-load-plugins')();
 var streamify    = require('gulp-streamify');
+var fs           = require('fs');
+var watchify     = require('watchify');
+var sourcemaps   = require('gulp-sourcemaps');
+var assign       = require('lodash.assign');
+var source       = require('vinyl-source-stream');
+var buffer       = require('vinyl-buffer');
+var mainBower    = require('main-bower-files');
+
+// var b = browserify({
+//
+// })
 
 //==============================
 // PATHS CONFIG
@@ -20,6 +30,7 @@ var streamify    = require('gulp-streamify');
 var config = {
     css: {
         src : './assets/**/*.scss',
+        lib : './assets/scss/lib',
         dest: './app/css'
     },
     js: {
@@ -31,6 +42,9 @@ var config = {
     html: {
         src: './index.html',
         dest: './app/'
+    },
+    browserify: {
+        debug  : true
     }
 }
 
@@ -48,19 +62,36 @@ gulp.task('sass', function () {
 });
 
 //==============================
+// COPY BOWER COMPONENTS
+//==============================
+gulp.task('bower', function() {
+    return gulp.src(mainBower('**/*.css'))
+                .pipe(gulp.dest(config.css.lib));
+});
+
+//==============================
 // BROWSERIFY
 //==============================
-gulp.task('browserify', function () {
-    return browserify(config.js.srcMain)
-                .bundle().on('error', gutil.log)
-                .pipe(source('bundle.js'))
-                .pipe(gulp.dest(config.js.dest))
+var customOpts = {
+    entries: [config.js.srcMain],
+    debug  : config.browserify.debug
+};
+var opts = assign({}, watchify.args, customOpts);
+var b    = watchify(browserify(opts));
 
-                // Minify and send to /app/js
-                .pipe($.rename('bundle.min.js'))
-                .pipe($.streamify($.uglify().on('error', gutil.log)))
-                .pipe(gulp.dest(config.js.bundle));
-});
+function bundle() {
+    return b.bundle()
+            .on('error', gutil.log.bind(gutil, 'Browserify Error'))
+            .pipe(source('bundle.js'))
+            .pipe(buffer())
+            .pipe(sourcemaps.init({loadMaps: true})) // loads map from browserify file
+            .pipe(sourcemaps.write('./')) // writes .map file
+            .pipe(gulp.dest(config.js.bundle));
+}
+
+gulp.task('browserify', bundle); // so you can run `gulp js` to build the file
+b.on('update', bundle); // on any dep update, runs the bundler
+b.on('log', gutil.log); // output build logs to terminal
 
 //==============================
 // MINIFY HTML
@@ -95,4 +126,4 @@ gulp.task('server', function () {
 //==============================
 // DEFAULT
 //==============================
-gulp.task('default', ['browserify', 'sass', 'html', 'watch', 'server']);
+gulp.task('default', ['bower', 'browserify', 'sass', 'html', 'watch', 'server']);
