@@ -48,7 +48,7 @@ gulp.task('sass', function () {
     return gulp.src(config.css.src)
                 .pipe(sass().on('error', gutil.log))
                 .pipe(autoprefixer({
-                    browsers: ['last 3 versions']
+                    browsers: ['last 3 versions', 'IE 9', 'IE 10', 'IE 11']
                 }))
                 .pipe(concat('main.css'))
                 .pipe(gulp.dest(config.css.dest));
