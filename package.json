@@ -1,5 +1,5 @@
 {
-  "name": "Diwanee Boilerplate",
+  "name": "diwanee-boilerplate",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "bower-requirejs": "^1.2.0",
-    "jquery": "^2.2.4"
+    "jquery": "^2.2.4",
+    "slick-carousel": "^1.6.0"
   }
 }

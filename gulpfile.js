@@ -34,14 +34,6 @@ var config = {
 }
 
 //==============================
-// COPY BOWER COMPONENTS
-//==============================
-gulp.task('bower', function() {
-    return gulp.src(mainBower())
-                .pipe(gulp.dest('./app/lib'));
-});
-
-//==============================
 // COMPILE SCSS/SASS
 //==============================
 gulp.task('sass', function () {

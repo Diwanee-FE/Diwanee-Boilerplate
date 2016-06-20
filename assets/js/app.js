@@ -1,6 +1,6 @@
-var $      = require('jquery');
-var second = require('./second.js');
+var $             = require('jquery');
+var slickSliderHP = require('./slickHome.js');
 
 console.log('Main js');
 
-second();
+slickSliderHP();
