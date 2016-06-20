@@ -48,3 +48,15 @@
 .uppercase       { text-transform: uppercase; }
 .lowercase       { text-transform: lowercase; }
 .capitalize      { text-transform: capitalize; }
+
+
+//------COMMON COLUMN WIDTHS
+%col-1-2 {
+    width: percentage(1/2);
+}
+%col-1-3 {
+    width: percentage(1/3);
+}
+%col-2-3 {
+    width: percentage(2/3);
+}

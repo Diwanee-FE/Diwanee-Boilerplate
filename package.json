@@ -9,19 +9,27 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "angular": "^1.5.6",
     "bower": "^1.7.9",
+    "browserify": "^13.0.1",
+    "event-stream": "^3.3.2",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-concat": "^2.6.0",
     "gulp-csscomb": "^3.0.7",
     "gulp-htmlmin": "^2.0.0",
+    "gulp-load-plugins": "^1.2.4",
+    "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.2.0",
+    "gulp-streamify": "^1.0.2",
     "gulp-uglify": "^1.5.3",
     "gulp-util": "^3.0.7",
     "gulp-webserver": "^0.9.1",
-    "main-bower-files": "^2.13.1"
+    "main-bower-files": "^2.13.1",
+    "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {
-    "bower-requirejs": "^1.2.0"
+    "bower-requirejs": "^1.2.0",
+    "jquery": "^2.2.4"
   }
 }

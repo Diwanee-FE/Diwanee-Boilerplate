@@ -1,0 +1,16 @@
+//--------------------------
+//--FLAG BLOCK || WIDTH 100%
+//--------------------------
+.flag--block {
+    @extend .flag;
+
+    width: 100%;
+    .flag__media {
+        display: table-cell;
+        vertical-align: top;
+    }
+    .flag__body {
+        display: table-cell;
+        vertical-align: middle;
+    }
+}
