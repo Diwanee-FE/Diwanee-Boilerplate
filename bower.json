@@ -4,12 +4,16 @@
   "main": "index.js",
   "authors": [
     "Ivan Buljovcic <ivan.buljovcic@diwanee.com>",
-    "Milos Bjelcevic <milos.bjelcevic@diwanee.com>"
+    "Milos Bjelcevic <milos.bjelcevic@diwanee.com>",
+    "Justina Valda-Rajić <justina.valdarajic@diwanee.com>",
+    "Aleksandar Batin <aleksandar.batin@diwanee.com>",
+    "Marija Jovicevic <marija.jovicevic@diwanee.com>"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/IvanBuljovcic/Diwanee-boiler",
+  "homepage": "https://github.com/Diwanee-FE/Diwanee-Boilerplate",
   "ignore": [
     "**/.*",
+    "app",
     "node_modules",
     "bower_components",
     "test",

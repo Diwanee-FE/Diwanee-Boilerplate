@@ -1,44 +1,64 @@
 {
-  "name": "diwanee-boilerplate",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "angular": "^1.5.6",
-    "bower": "^1.7.9",
-    "browserify": "^13.0.1",
-    "event-stream": "^3.3.2",
-    "fs": "0.0.2",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.0",
-    "gulp-concat": "^2.6.0",
-    "gulp-csscomb": "^3.0.7",
-    "gulp-flatten": "^0.3.0",
-    "gulp-htmlmin": "^2.0.0",
-    "gulp-load-plugins": "^1.2.4",
-    "gulp-path": "^3.0.3",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.2.0",
-    "gulp-sourcemaps": "^1.6.0",
-    "gulp-streamify": "^1.0.2",
-    "gulp-uglify": "^1.5.3",
-    "gulp-util": "^3.0.7",
-    "gulp-webserver": "^0.9.1",
-    "lodash.assign": "^4.0.9",
-    "main-bower-files": "^2.13.1",
-    "vinyl-buffer": "^1.0.0",
-    "vinyl-source-stream": "^1.1.0",
-    "watchify": "^3.7.0"
-  },
-  "dependencies": {
-    "bower-requirejs": "^1.2.0",
-    "gulp-util": "^3.0.7",
-    "jquery": "^2.2.4",
-    "slick-carousel": "^1.6.0"
-  }
+    "name": "diwanee-boilerplate",
+    "version": "0.1.0",
+    "description": "Diwanee Front-End boilerplate || Development version",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": {
+        "name": "Ivan Buljovcic",
+        "email": "ivan.buljovcic@diwanee.com"
+    },
+    "contributors": [{
+            "name": "Milos Bjelcevic",
+            "email": "milos.bjelcevic@diwanee.com"
+        },
+        {
+            "name": "Justina Valda-Rajić",
+            "email": "justina.valdarajic@diwanee.com"
+        },
+        {
+            "name": "Aleksandar Batin",
+            "email": "aleksandar.batin@diwanee.com"
+        },
+        {
+            "name": "Marija Jovicevic",
+            "email": "marija.jovicevic@diwanee.com"
+        }
+    ],
+    "license": "MIT",
+    "devDependencies": {
+        "angular": "^1.5.6",
+        "bower": "^1.7.9",
+        "browserify": "^13.0.1",
+        "event-stream": "^3.3.2",
+        "fs": "0.0.2",
+        "gulp": "^3.9.1",
+        "gulp-autoprefixer": "^3.1.0",
+        "gulp-concat": "^2.6.0",
+        "gulp-csscomb": "^3.0.7",
+        "gulp-flatten": "^0.3.0",
+        "gulp-htmlmin": "^2.0.0",
+        "gulp-load-plugins": "^1.2.4",
+        "gulp-path": "^3.0.3",
+        "gulp-rename": "^1.2.2",
+        "gulp-sass": "^2.2.0",
+        "gulp-sourcemaps": "^1.6.0",
+        "gulp-streamify": "^1.0.2",
+        "gulp-uglify": "^1.5.3",
+        "gulp-util": "^3.0.7",
+        "gulp-webserver": "^0.9.1",
+        "lodash.assign": "^4.0.9",
+        "main-bower-files": "^2.13.1",
+        "vinyl-buffer": "^1.0.0",
+        "vinyl-source-stream": "^1.1.0",
+        "watchify": "^3.7.0"
+    },
+    "dependencies": {
+        "bower-requirejs": "^1.2.0",
+        "gulp-util": "^3.0.7",
+        "jquery": "^2.2.4",
+        "slick-carousel": "^1.6.0"
+    }
 }
