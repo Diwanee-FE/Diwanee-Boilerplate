@@ -2,5 +2,16 @@
 //----------------CONTAINER
 //-------------------------
 .container {
-    
+    @extend %clearfix;
+
+    width: 80vw;
+    margin: 0 auto;
+
+    position: relative;
+}
+
+.container--flag {
+    @extend .container;
+
+
 }

@@ -4,12 +4,12 @@
 .flag {
     display: table;
     @extend %col-1-3;
-    padding: 0 2em;
     float: left;
 
     // Article image
     &__media {
-        display: table-row;
+        display: table-cell;
+        @extend %col-1-2;
         img {
             width: 100%;
         }
@@ -17,7 +17,8 @@
 
     // Article text (tag, title, intro, date)
     &__body {
-        display: table-row;
+        display: table-cell;
+        vertical-align: middle;
     }
 }
 
