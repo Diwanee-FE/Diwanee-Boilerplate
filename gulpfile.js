@@ -52,7 +52,7 @@ var config = {
 //==============================
 gulp.task('sass', function () {
     return gulp.src(config.css.src)
-                .pipe(sass({outputStyle: 'compressed'}).on('error', gutil.log))
+                .pipe(sass().on('error', gutil.log))
                 .pipe(autoprefixer({
                     browsers: ['last 3 versions', 'IE 9', 'IE 10', 'IE 11']
                 }))
