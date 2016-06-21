@@ -344,3 +344,5 @@ h1 {
   display: block;
   width: 80%;
   margin: 0 auto; }
+  .hpSlider img {
+    margin: 0 auto; }
