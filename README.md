@@ -2,17 +2,33 @@
 SCSS only boilerplate for starting new projects
 
 ## Installation
-- Download the project
-- cd into project folder
-- run 'npm install'
-- run 'bower install'
-- run 'gulp' to compile SCSS to CSS
+**Open your terminal and type the following:**
+<br />
+<br />
+`git clone git@github.com:Diwanee-FE/Diwanee-Boilerplate.git`
+<br />
+`cd Diwanee-Boilerplate`
+<br />
+`npm install`
+<br />
+`bower install`
+<br />
+`gulp`
+
 
 ## Development
 When working on a new element:
-- Checkout to 'elements' branch
-- Create a new branch from that with the name of the element as the branch name
-- When the element is finished, pull request to the 'element' branch from your branch
+
+`git checkout elements`
+<br />
+`git checkout -b nameOfElement`
+<br />
+<br />
+<br />
+When development on the specific element is done:
+- Go to the Diwanee Boilerplate repository at https://github.com/Diwanee-FE/Diwanee-Boilerplate
+- Create Pull request with the **elements** branch as the **base** and your **nameOfElement** branch as the **compare**
+
 
 ## KNOWN ISSUES
 - On first start of gulp server, the server starts before the 'app' folder is generated
