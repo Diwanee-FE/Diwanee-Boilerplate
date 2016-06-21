@@ -19,10 +19,9 @@ var assign       = require('lodash.assign');
 var source       = require('vinyl-source-stream');
 var buffer       = require('vinyl-buffer');
 var mainBower    = require('main-bower-files');
+var flatten      = require('gulp-flatten');
+var path         = require('gulp-util');
 
-// var b = browserify({
-//
-// })
 
 //==============================
 // PATHS CONFIG
@@ -31,13 +30,13 @@ var config = {
     css: {
         src : './assets/**/*.scss',
         lib : './assets/scss/lib',
-        dest: './app/css'
+        dest: './app/assets/css'
     },
     js: {
         src    : './assets/js/src/',
         srcMain: './assets/js/main.js',
         dest   : './assets/js/app',
-        bundle : './app/js'
+        bundle : './app/assets/js'
     },
     html: {
         src: './index.html',
@@ -53,7 +52,7 @@ var config = {
 //==============================
 gulp.task('sass', function () {
     return gulp.src(config.css.src)
-                .pipe(sass().on('error', gutil.log))
+                .pipe(sass({outputStyle: 'compressed'}).on('error', gutil.log))
                 .pipe(autoprefixer({
                     browsers: ['last 3 versions', 'IE 9', 'IE 10', 'IE 11']
                 }))
@@ -67,6 +66,12 @@ gulp.task('sass', function () {
 gulp.task('bower', function() {
     return gulp.src(mainBower('**/*.css'))
                 .pipe(gulp.dest(config.css.lib));
+});
+
+gulp.task('fonts', function () {
+    return gulp.src('./bower_components/**/*.{eot,svg,ttf,woff,woff2}')
+                .pipe($.flatten())
+                .pipe(gulp.dest('./app/assets/fonts'));
 });
 
 //==============================
@@ -126,4 +131,4 @@ gulp.task('server', function () {
 //==============================
 // DEFAULT
 //==============================
-gulp.task('default', ['bower', 'browserify', 'sass', 'html', 'watch', 'server']);
+gulp.task('default', ['bower', 'fonts', 'browserify', 'sass', 'html', 'watch', 'server']);

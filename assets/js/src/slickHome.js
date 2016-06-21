@@ -11,11 +11,13 @@ module.exports = function (slideElement, dotsContainer, visibleTag, visibleTitle
     $slideElement.slick({
         slidesToShow  : 1,
         slidesToScroll: 1,
+        adaptiveHeight: true,
         dots          : true,
-        dotsClass     : dotsContainer,
         infinite      : true,
         speed         : 300,
-        centerMode    : true
+        appendDots    : $(dotsContainer),
+        prevArrow     : '<button type="button" class="slick-prev"><i class="fa fa-chevron-left"></i></button>',
+        nextArrow     : '<button type="button" class="slick-next"><i class="fa fa-chevron-right"></i></button>'
     });
 
 
