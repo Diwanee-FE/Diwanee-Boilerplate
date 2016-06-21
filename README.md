@@ -8,6 +8,11 @@ SCSS only boilerplate for starting new projects
 - run 'bower install'
 - run 'gulp' to compile SCSS to CSS
 
+## Development
+When working on a new element:
+- Checkout to 'elements' branch
+- Create a new branch from that with the name of the element as the branch name
+- When the element is finished, pull request to the 'element' branch from your branch
 
 ## KNOWN ISSUES
 - On first start of gulp server, the server starts before the 'app' folder is generated
