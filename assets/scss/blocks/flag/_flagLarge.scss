@@ -1,0 +1,12 @@
+//-------------------------
+//---------------FLAG LARGE
+//-------------------------
+.flag--large {
+    @extend .flag;
+    .flag__media {
+        width: $largeImageFlagWidth;
+    }
+    .flag__body {
+        width: 100% - $largeImageFlagWidth;
+    }
+}

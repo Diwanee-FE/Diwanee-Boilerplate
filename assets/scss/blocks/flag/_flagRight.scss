@@ -1,0 +1,12 @@
+//------------------------------
+//--FLAG RIGHT || IMAGE ON RIGHT
+//------------------------------
+.flag--right {
+    @extend .flag;
+
+    direction: rtl;
+    .flag__media,
+    .flag__body {
+        direction: ltr;
+    }
+}

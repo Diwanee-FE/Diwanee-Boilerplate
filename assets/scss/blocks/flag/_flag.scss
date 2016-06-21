@@ -1,0 +1,62 @@
+//-------------------------
+//---------------------FLAG
+//-------------------------
+.flag {
+    display: table;
+    @extend %col-1-3;
+    padding: 0 2em;
+    float: left;
+
+    // Article image
+    &__media {
+        display: table-row;
+        img {
+            width: 100%;
+        }
+    }
+
+    // Article text (tag, title, intro, date)
+    &__body {
+        display: table-row;
+    }
+}
+
+
+//------FLAG BLOCK || 100% WIDTH
+.flag--block {
+    @extend .flag;
+
+    width: 100%;
+    .flag__media {
+        display: table-cell;
+        vertical-align: top;
+    }
+    .flag__body {
+        display: table-cell;
+        vertical-align: middle;
+    }
+}
+
+
+//------LARGE IMAGE FLAG
+.flag--large {
+    @extend .flag;
+    .flag__media {
+        width: $largeImageFlagWidth;
+    }
+    .flag__body {
+        width: 100% - $largeImageFlagWidth;
+    }
+}
+
+
+//------IMAGE ON RIGHT
+.flag--right {
+    @extend .flag;
+
+    direction: rtl;
+    .flag__media,
+    .flag__body {
+        direction: ltr;
+    }
+}

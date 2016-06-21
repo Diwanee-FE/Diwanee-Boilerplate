@@ -7,7 +7,8 @@
 @import 'config/variables';
 
 //------LIBRARY
-// @import "lib/";
+@import "lib/slick";
+@import "lib/font-awesome";
 
 //------MIXINS
 @import 'mixins/breakpoints';
@@ -32,7 +33,7 @@
 //------BLOCKS
 @import 'blocks/header/header';
 @import 'blocks/footer/footer';
-@import 'blocks/article/articles';
+@import 'blocks/flag/flag';
 
 //------SLIDERS
 @import 'sliders/slickSlider';

@@ -1,3 +1,36 @@
 //-------------------------
 //-------------SLICK SLIDER
 //-------------------------
+.slideWrapper {
+    width: 80vw;
+    margin: 0 auto;
+
+    position: relative;
+}
+
+.hpSlider {
+    img {
+        margin: 0 auto;
+    }
+}
+
+.hpSlider__text {
+    position: absolute;
+    bottom: 5rem;
+    right: 5rem;
+}
+
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+
+    @include transform (translateY(-50%));
+
+    z-index: $levelMiddle;
+    &.slick-next {
+        right: 0;
+    }
+    &.slick-prev {
+        left: 0;
+    }
+}
