@@ -26,7 +26,6 @@ When working on a new element:
 <br />
 <br />
 When development on the specific element is done:
-- Go to the Diwanee Boilerplate repository at https://github.com/Diwanee-FE/Diwanee-Boilerplate
 - Create Pull request with the **elements** branch as the **base** and your **nameOfElement** branch as the **compare**
 
 
