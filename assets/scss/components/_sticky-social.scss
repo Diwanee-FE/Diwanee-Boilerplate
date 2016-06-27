@@ -1,0 +1,24 @@
+//-------------------------
+//------------STICKY-SOCIAL
+//-------------------------
+
+.sticky-helper {
+    display: inline-block;
+    width: 90%;
+    float: right;
+    font-size: 14px;
+}
+.sticky-social {
+    display: inline-block;
+    width: 60px;
+
+    top: 0px;
+
+    border: 1px solid black;
+    li {
+        display: inline-block;
+        width: 100%;
+
+        text-align: center;
+    }
+}
