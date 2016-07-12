@@ -1,0 +1,36 @@
+//-------------------------
+//----------------SEARCH
+//-------------------------
+
+.search {
+    width: 20%;
+    position: relative;
+
+    float: right;
+    &__content {
+        display: none;
+
+        position: absolute;
+        top: 0;
+        float: right;
+
+        border: 1px solid black;
+    }
+    &__button {
+        width: 9rem;
+        height: 5rem;
+        padding-top: 0.8rem;
+
+        position: relative;
+        float: right;
+
+        border: 1px solid black;
+
+        text-align: center;
+    }
+    .open {
+        display: block;
+        width: 20rem;
+        height: 5rem;
+    }
+}
