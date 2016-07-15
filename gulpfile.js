@@ -68,6 +68,9 @@ gulp.task('bower', function() {
                 .pipe(gulp.dest(config.css.lib));
 });
 
+//==============================
+// COPY FONTS FROM BOWER
+//==============================
 gulp.task('fonts', function () {
     return gulp.src('./bower_components/**/*.{eot,svg,ttf,woff,woff2}')
                 .pipe($.flatten())
@@ -123,7 +126,7 @@ gulp.task('server', function () {
     return gulp.src('./app')
                 .pipe(webserver({
                     port      : '1337',
-                    open      : true,
+                    open      : false,
                     livereload: true
                 }));
 });

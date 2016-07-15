@@ -1,1 +1,33 @@
+.articlePage {
+    &__image {
+        @extend %clearfix;
 
+        display: block;
+        width: 100%;
+
+        &--left {
+            padding: {
+                right: 5rem;
+                bottom: 5rem;
+            }
+            float: left;
+        }
+
+        &--right {
+            padding: {
+                left: 5rem;
+                bottom: 5px;
+            }
+            float: right;
+        }
+
+        img {
+            margin: 0 auto;
+        }
+    }
+
+    &__body {
+        display: block;
+        width: 100%;
+    }
+}
