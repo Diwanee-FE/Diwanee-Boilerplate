@@ -8,20 +8,34 @@ SCSS only boilerplate for starting new projects
 `git clone git@github.com:Diwanee-FE/Diwanee-Boilerplate.git`
 <br />
 `cd Diwanee-Boilerplate`
-<br />
-`npm install`
-<br />
-`bower install`
-<br />
-`gulp`
+
 
 
 ## Development
-When working on a new element:
-
-`git checkout elements`
+To start development, you need to install the required NPM and Bower components.
 <br />
-`git checkout -b nameOfElement`
+To do so, follow these simple steps
+
+<br />
+Step 1: **Open your terminal and type the following:**
+<br />
+Step 2: `git checkout elements`
+<br />
+Step 3: `npm install`
+<br />
+Step 4: `bower install`
+<br />
+Step 5: `gulp`
+<br />
+Step 6: ???
+<br />
+Step 7: Profit ($$$$)
+
+<br />
+When working on a new element:
+<br />
+<br />
+Step 8: `git checkout -b nameOfElement`
 <br />
 <br />
 <br />
