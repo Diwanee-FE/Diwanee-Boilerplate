@@ -40,6 +40,10 @@ Step 3: `npm install`
 Step 4: `bower install`
 <br />
 Step 5: `gulp`
+<br />
+Step 6: *Open your browser*
+<br />
+Step 7: Go to - `localhost:1337`
 
 ### 2.1 -  When working on a new element:
 Step 1: `git checkout -b nameOfElement`
