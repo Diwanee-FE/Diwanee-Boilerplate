@@ -8,13 +8,14 @@
 
     float: right;
     &__content {
-        display: none;
+        width: 0;
+        height: 5rem;
 
         position: absolute;
         top: 0;
         float: right;
 
-        border: 1px solid black;
+        border: 0px solid black;
     }
     &__button {
         width: 9rem;
@@ -24,13 +25,16 @@
         position: relative;
         float: right;
 
+        background-color: white;
         border: 1px solid black;
 
         text-align: center;
     }
     .open {
-        display: block;
         width: 20rem;
-        height: 5rem;
+
+        border: 1px solid black;
+
+        transition: 0.3s all ease-in-out;
     }
 }
