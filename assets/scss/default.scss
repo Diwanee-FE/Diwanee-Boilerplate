@@ -7,45 +7,43 @@
 @import 'config/variables';
 
 //------LIBRARY
-@import "lib/slick";
-@import "lib/font-awesome";
+@import 'lib/slick',
+        'lib/font-awesome';
 
 //------MIXINS
-@import 'mixins/breakpoints';
-@import 'mixins/borderRadius';
-@import 'mixins/transition';
-@import 'mixins/transform';
-@import 'mixins/calc';
-@import 'mixins/placeholder';
-@import 'mixins/fontFace';
+@import 'mixins/breakpoints',
+        'mixins/borderRadius',
+        'mixins/transition',
+        'mixins/transform',
+        'mixins/calc',
+        'mixins/placeholder',
+        'mixins/fontFace';
 
 //------MAIN CONFIG
-@import 'config/reset';
-@import 'config/baseConfig';
-@import 'config/typography';
-@import 'config/helpers';
+@import 'config/reset',
+        'config/baseConfig',
+        'config/typography',
+        'config/helpers';
 
 //------COMPONENTS
-@import 'components/container';
-@import 'components/button';
-@import 'components/navigation/navigation';
-@import 'components/quotes';
+@import 'components/container',
+        'components/button',
+        'components/navigation/navigation',
+        'components/quotes';
 
 //------BLOCKS
-@import 'blocks/header/header';
-@import 'blocks/footer/footer';
-@import 'blocks/flag/flag';
-@import 'blocks/pagination/pagination';
+@import 'blocks/header/header',
+        'blocks/footer/footer',
+        'blocks/flag/flag',
+        'blocks/pagination/pagination';
 
 //------SLIDERS
 @import 'sliders/slickSlider';
 
 //------PAGES
-@import 'pages/404Page';
-@import 'pages/article/articlePage';
-@import 'pages/StaticPage';
+@import 'pages/404Page',
+        'pages/article/articlePage',
+        'pages/StaticPage';
 
 //------IE FIXES
 @import 'ie/ie';
-
-
