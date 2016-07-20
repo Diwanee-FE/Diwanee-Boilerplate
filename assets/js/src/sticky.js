@@ -12,7 +12,6 @@ module.exports = function (sticky, distance, right) {
 
     var $sticky       = $(sticky);
     var $stickyParent = $('.stickyParent');
-    var $stickyHelper = $('.stickyHelper');
 
     var stickyH;
     var stickyParentOffset;
@@ -26,12 +25,11 @@ module.exports = function (sticky, distance, right) {
         stickyWidth        = $sticky.outerWidth();
         leftEdge           = $stickyParent.offset().left;
         leftEdgeParent     = $stickyParent.outerWidth();
-        contentLeftEdge    = leftEdge + leftEdgeParent - stickyWidth;
+        contentLeftEdge    = leftEdge + leftEdgeParent;
     });
 
     //IF STICKY IS RIGHT THEN LOAD THESE VARIABLES
     if (right) {
-        $stickyHelper.css('float', 'left');
         rightLimit      = stickyParentOffset + $stickyParent.height();
     }
 
@@ -45,7 +43,7 @@ module.exports = function (sticky, distance, right) {
                    'position': 'fixed',
                    'top'     : distance,
                    'bottom'  : 'auto',
-                   'left'    : 'auto'
+                   'left'    : leftEdge - stickyWidth
                });
            } else {
                $sticky.css({
@@ -62,7 +60,7 @@ module.exports = function (sticky, distance, right) {
                    'position': 'absolute',
                    'bottom'  : 0,
                    'top'     : 'auto',
-                   'left'    : 'auto'
+                   'left'    : -stickyWidth
                });
            } else {
                $sticky.css({
@@ -70,7 +68,7 @@ module.exports = function (sticky, distance, right) {
                    'top'     : 'auto',
                    'right'   : 0,
                    'bottom'  : 0,
-                   'left'    : 'auto'
+                   'left'    : leftEdgeParent
                });
            }
        } else {
@@ -78,14 +76,14 @@ module.exports = function (sticky, distance, right) {
                $sticky.css({
                    'position': 'absolute',
                    'top'     : 0,
-                   'left' : 'auto'
+                   'left' : '-60px'
                });
            } else {
                $sticky.css({
                    'position': 'absolute',
                    'top'     : 0,
                    'right'   : 0,
-                   'left'    : 'auto'
+                   'left'    : leftEdgeParent
                });
            }
        }
