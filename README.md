@@ -21,7 +21,7 @@ Step 1: `git clone git@github.com:Diwanee-FE/Diwanee-Boilerplate.git`
 <br />
 Step 2: `cd Diwanee-Boilerplate`
 <br />
-Step 3: Copy the files/folders you need or want into your project folder
+Step 3: *Copy the files/folders you need or want into your project folder*
 
 
 
@@ -31,7 +31,7 @@ To start development, you need to install the required NPM and Bower components.
 To do so, follow these simple steps
 
 <br />
-Step 1: **Open your terminal and type the following**
+Step 1: *Open your terminal and type the following*
 <br />
 Step 2: `git checkout elements`
 <br />
@@ -42,7 +42,9 @@ Step 4: `bower install`
 Step 5: `gulp`
 
 ### 2.1 -  When working on a new element:
-Step 8: `git checkout -b nameOfElement`
+Step 1: `git checkout -b nameOfElement`
+<br />
+Step 2: *Make awesome code*
 
 ### 2.2 - When development on the specific element is done:
 - Create Pull request with the **elements** branch as the **base** and your **nameOfElement** branch as the **compare**
