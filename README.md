@@ -57,12 +57,15 @@ Step 2: *Make awesome code*
 
 
 ## v.0.2 Bower Components
-  Since we want to keep boilerplate as light as it can be, we decided to put all the components in the library which can be installed via **Bower**
+  Since we want to keep boilerplate as light as it can be, we decided to put all the components in the library which can be installed via **Bower**.
 
 
 ### Packages ###
 
- ### Optional packages that will make your project awesome ###
+### Recommended packages that will make your life easier ###
+
+<br>
+### Optional packages that will make your project awesome ###
 
  * [Animate.css](https://github.com/daneden/animate.css)     
  `bower install animate.css --save`
