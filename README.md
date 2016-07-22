@@ -69,8 +69,8 @@ Step 2: *Make awesome code*
  <br><br>
  * [Hover.css](https://github.com/IanLunn/Hover)     
  `bower install Hover`
- <br><br>      
- * [ScrollReveal.js](https://github.com/IanLunn/Hover)     
+ <br>
+ * [ScrollReveal.js](https://github.com/jlmakes/scrollreveal.js/tree/master)     
  `bower install scrollreveal`
 
 ***Click on links for documentation***
