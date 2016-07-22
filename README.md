@@ -66,7 +66,7 @@ Step 2: *Make awesome code*
 
  * [Animate.css](https://github.com/daneden/animate.css)     
  `bower install animate.css --save`
- <br><br>
+ <br>
  * [Hover.css](https://github.com/IanLunn/Hover)     
  `bower install Hover`
  <br>
