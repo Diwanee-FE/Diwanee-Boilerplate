@@ -1,3 +1,5 @@
+<img src="http://www.diwanee-serbia.com/assets/img/diwanee-logo-header.png">
+<hr>
 # Diwanee Boilerplate
 *SCSS and JS boilerplate for starting new projects*
 
@@ -54,6 +56,27 @@ Step 2: *Make awesome code*
 - Create Pull request with the **elements** branch as the **base** and your **nameOfElement** branch as the **compare**
 
 
-## 3 - KNOWN ISSUES
-- On first start of gulp server, the server starts before the 'app' folder is generated
-- Slick Carousel css is missing on first load, to fix this, start gulp and change any .scss file
+## v.0.2 Bower Components
+  Since we want to keep boilerplate as light as it can be, we decided to put all the components in the library which can be installed via **Bower**.
+
+
+## Packages
+<hr>
+
+### Recommended packages that will make your life easier ###
+
+<br>
+### Optional packages that will make your project awesome ###
+
+ * [Animate.css](https://github.com/daneden/animate.css)     
+ `bower install animate.css --save-dev`
+ <br>
+ * [Hover.css](https://github.com/IanLunn/Hover)     
+ `bower install Hover --save-dev`
+ <br>
+ * [ScrollReveal.js](https://github.com/jlmakes/scrollreveal.js/tree/master)     
+ `bower install scrollreveal --save-dev`
+
+***Click on links for documentation***
+
+<hr>
