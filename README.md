@@ -61,7 +61,7 @@ Step 2: *Make awesome code*
 
 
 ## Packages ##
-<hr>
+
 
 ### Recommended packages that will make your life easier ###
 
