@@ -60,7 +60,8 @@ Step 2: *Make awesome code*
   Since we want to keep boilerplate as light as it can be, we decided to put all the components in the library which can be installed via **Bower**.
 
 
-### Packages ###
+## Packages ##
+<hr>
 
 ### Recommended packages that will make your life easier ###
 
