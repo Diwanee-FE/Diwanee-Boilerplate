@@ -2,15 +2,15 @@
 //------------STICKY-SOCIAL
 //-------------------------
 
-.stickyHelper {
-    display: inline-block;
-    width: 90%;
-    float: right;
+.stickyParent {
+    position: relative;
+    background-color: red;
 }
 .sticky {
     display: inline-block;
     width: 60px;
 
+    position: absolute;
     top: 0px;
 
     border: 1px solid black;
