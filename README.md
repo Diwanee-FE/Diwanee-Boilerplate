@@ -68,7 +68,43 @@ BEM stands for *Block Element Modifier*. So, you have a Block, that can be somet
 So by using this logic, you would have somehing like this:
 * **Block:** .mainMenu
 * **Element:** .mainMenu__item
-* **Modifier:** .mainMenu__item--different
+* **Modifier:** .mainMenu__item--red
+
+```
+<nav class="mainMenu">
+    <ul>
+        <li class="mainMenu__item"> Menu Item 1 </li>
+        <li class="mainMenu__item"> Menu Item 2 </li>
+        <li class="mainMenu__item--red"> Menu Item 3 </li>
+    </ul>
+</nav>
+```
+
+How do you code this in SCSS ?
+<br />
+* In your **mainMenu.scss** or similar
+<br />
+
+```
+.mainMenu {
+    display: inline-block;
+
+    ul {
+        padding: 0;
+        list-style: none;
+    }
+
+    &__item {
+        display: inline-block;
+
+        color: #000;
+
+        &--red {
+            color: #F00;
+        }
+    }
+}
+```
 
 ### 3.2 - Camel case names:
 You might have noticed in the previous sub-section that class *.mainMenu* was used.
@@ -83,8 +119,6 @@ Since we want to keep boilerplate as light as it can be, we decided to put all t
 
 
 ## 4 - Packages
-<hr>
-
 ### Recommended packages that will make your life easier ###
 
 <br>
