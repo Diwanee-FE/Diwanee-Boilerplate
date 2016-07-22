@@ -69,13 +69,13 @@ Step 2: *Make awesome code*
 ### Optional packages that will make your project awesome ###
 
  * [Animate.css](https://github.com/daneden/animate.css)     
- `bower install animate.css --save`
+ `bower install animate.css --save-dev`
  <br>
  * [Hover.css](https://github.com/IanLunn/Hover)     
- `bower install Hover`
+ `bower install Hover --save-dev`
  <br>
  * [ScrollReveal.js](https://github.com/jlmakes/scrollreveal.js/tree/master)     
- `bower install scrollreveal`
+ `bower install scrollreveal --save-dev`
 
 ***Click on links for documentation***
 
