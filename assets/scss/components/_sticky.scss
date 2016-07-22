@@ -1,0 +1,23 @@
+//-------------------------
+//------------STICKY-SOCIAL
+//-------------------------
+
+.stickyParent {
+    position: relative;
+    background-color: red;
+}
+.sticky {
+    display: inline-block;
+    width: 60px;
+
+    position: absolute;
+    top: 0px;
+
+    border: 1px solid black;
+    li {
+        display: inline-block;
+        width: 100%;
+
+        text-align: center;
+    }
+}
