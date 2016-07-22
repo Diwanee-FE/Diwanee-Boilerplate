@@ -55,12 +55,34 @@ Step 2: *Make awesome code*
 ### 2.2 - When development on the specific element is done:
 - Create Pull request with the **elements** branch as the **base** and your **nameOfElement** branch as the **compare**
 
+## 3 - USAGE
+This section is just a friendly suggestion that may help you write better class names which in turn might help you understand at a glance what each class actually is. Not to mention it will make other developers who read your code, not hate you as much.
 
-## v.0.2 Bower Components
-  Since we want to keep boilerplate as light as it can be, we decided to put all the components in the library which can be installed via **Bower**.
+### 3.1 - BEM class names:
+When naming your classes, consider using the [BEM](http://getbem.com/) methodology.
+<br />
+If you're too lazy to read this or you're in a time crunch, heres a simple explenation.
+<br />
+BEM stands for *Block Element Modifier*. So, you have a Block, that can be something like a *Main Menu*. An element of that block which is a *Menu Item*. And finally, you have a variation of the *Menu Item* or rather, a modified version of it.
+<br />
+So by using this logic, you would have somehing like this:
+* **Block:** .mainMenu
+* **Element:** .mainMenu__item
+* **Modifier:** .mainMenu__item--different
+
+### 3.2 - Camel case names:
+You might have noticed in the previous sub-section that class *.mainMenu* was used.
+<br />
+Why do I point this out?
+<br />
+When using the **BEM** methodology, if youre not using [camelCase](https://en.wikipedia.org/wiki/CamelCase), you might get something like this, **.main-menu__item-inner-wrapper--small**, which is just a mess to look at or read.
 
 
-## Packages
+## v 0.2.0 Bower Components
+Since we want to keep boilerplate as light as it can be, we decided to put all the components in the library which can be installed via **Bower**.
+
+
+## 4 - Packages
 <hr>
 
 ### Recommended packages that will make your life easier ###
@@ -68,14 +90,14 @@ Step 2: *Make awesome code*
 <br>
 ### Optional packages that will make your project awesome ###
 
- * [Animate.css](https://github.com/daneden/animate.css)     
- `bower install animate.css --save-dev`
- <br>
- * [Hover.css](https://github.com/IanLunn/Hover)     
- `bower install Hover --save-dev`
- <br>
- * [ScrollReveal.js](https://github.com/jlmakes/scrollreveal.js/tree/master)     
- `bower install scrollreveal --save-dev`
+* [Animate.css](https://github.com/daneden/animate.css)     
+`bower install animate.css --save-dev`
+<br>
+* [Hover.css](https://github.com/IanLunn/Hover)     
+`bower install Hover --save-dev`
+<br>
+* [ScrollReveal.js](https://github.com/jlmakes/scrollreveal.js/tree/master)     
+`bower install scrollreveal --save-dev`
 
 ***Click on links for documentation***
 
