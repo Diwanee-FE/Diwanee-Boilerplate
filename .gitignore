@@ -3,4 +3,6 @@
 /app
 app/index.html
 
+**/.DS_Store
+
 bundle.js
