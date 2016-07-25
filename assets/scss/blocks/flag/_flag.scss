@@ -3,13 +3,13 @@
 //-------------------------
 .flag {
     display: table;
-    @extend %col-1-3;
+    @extend .col-4-12;
     float: left;
 
     // Article image
     &__media {
         display: table-cell;
-        @extend %col-1-2;
+        @extend .col-6-12;
         img {
             width: 100%;
         }

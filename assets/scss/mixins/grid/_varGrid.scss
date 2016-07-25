@@ -1,0 +1,7 @@
+//---------------------------
+//-----------VARIABLES | GRID
+//---------------------------
+$numberOfColumns: 12;
+$baseColumnWidth: percent(1 / $numberOfColumns);
+
+$gridGutter: 3;

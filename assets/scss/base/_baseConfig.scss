@@ -13,11 +13,8 @@
 ::-moz-selection     { color: $colorWhite; background-color: lighten($colorBlack, 15%); } // FIREFOX
 ::-webkit-selection  { color: $colorWhite; background-color: lighten($colorBlack, 15%); } // WEBKIT
 
-html {
-	overflow-y: scroll;
-}
-
-html, body {
+html,
+body {
     width: 100%;
     overflow-x: hidden;
 }

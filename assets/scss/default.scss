@@ -1,50 +1,61 @@
 /*------------------------------------------------------------------------------
 *    CSS Document (http://www.w3.org/Style/CSS/)
-*    For STYLEGUIDE, reffer to /config/_styleguide.scss
+*    For STYLEGUIDE, reffer to /_styleguide.scss
 -----------------------------------------------------------------------------*/
+//------VARIABLES
+@import 'base/variables/varPaths',
+        'base/variables/varDimensions',
+        'base/variables/varFonts',
+        'base/variables/varMediaQueries',
+        'base/variables/varZindex',
+        'base/variables/varColors';
 
-//------ALL VARIABLES
-@import 'config/variables';
 
-//------LIBRARY
+//------MIXINS
+@import 'mixins/breakpoint/mixBreakpoints',
+        'mixins/font face/mixFontFace',
+        'mixins/placeholder/mixPlaceholder',
+        'mixins/grid/mixGrid';
+
+
+//------LIBRARY | REMOVE FROM 'master', THIS IS NOT NEEDED IN WEBEDIA
 @import 'lib/slick',
         'lib/font-awesome';
 
-//------MIXINS
-@import 'mixins/breakpoints',
-        'mixins/borderRadius',
-        'mixins/transition',
-        'mixins/transform',
-        'mixins/calc',
-        'mixins/placeholder',
-        'mixins/fontFace';
 
-//------MAIN CONFIG
-@import 'config/reset',
-        'config/baseConfig',
-        'config/typography',
-        'config/helpers';
+//------BASE CONFIG
+@import 'base/reset',
+        'base/helpers',
+        'base/baseConfig',
+        'base/typography';
+
+
+//------LAYOUT
+@import 'layout/container/container',
+        'layout/grid/grid';
+
 
 //------COMPONENTS
-@import 'components/container',
-        'components/button',
-        'components/navigation/navigation',
-        'components/quotes',
-        'components/sticky';
+@import 'components/buttons/button', // NOT CORE
+        'components/quotes/quotes'; // NOT CORE
+
 
 //------BLOCKS
-@import 'blocks/header/header',
+@import 'blocks/flag/flag', // NOT CORE
+        'blocks/navigation/navigation', // NOT CORE
+        'blocks/pagination/pagination', // NOT CORE
+        'blocks/stickySocial/stickySocial', // NOT CORE
+        'blocks/header/header',
         'blocks/footer/footer',
-        'blocks/flag/flag',
-        'blocks/pagination/pagination';
+        'blocks/sliders/slick/slickSlider'; // NOT CORE
 
-//------SLIDERS
-@import 'sliders/slickSlider';
 
 //------PAGES
-@import 'pages/404Page',
-        'pages/article/articlePage',
-        'pages/StaticPage';
+@import 'pages/error/404Page',
+        'pages/static/staticPage',
+        'pages/search/searchPage',
+        'pages/article/articlePage';
+
 
 //------IE FIXES
 @import 'ie/ie';

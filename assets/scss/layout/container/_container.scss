@@ -12,6 +12,10 @@
 
 .container--flag {
     @extend .container;
+}
 
+.row {
+    @include gridRow();
 
+    background: rgb(34, 201, 207);
 }

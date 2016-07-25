@@ -17,7 +17,7 @@
     position: absolute;
     top: 50%;
 
-    @include transform (translateY(-50%));
+    transform: translateY(-50%);
 
     z-index: $levelMiddle;
     &.slick-next {

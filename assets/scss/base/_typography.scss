@@ -11,12 +11,10 @@ html {
     font-size  : #{$fontSizePX};
 
     @include breakpoint (tablet) {
-        $fontSizePX: $baseFontSize / 1.5 + 'px';
-        font-size  : #{$fontSizePX};
+        font-size: 1.3333vw; // On 750px font size = 10px
     }
     @include breakpoint (phone) {
-        $fontSizePX: $baseFontSize / 2 + 'px';
-        font-size  : #{$fontSizePX};
+        font-size: 1.5625vw; // On 640px font size = 10px
     }
 }
 body {
@@ -39,7 +37,7 @@ u {
 
 //------STYLES
 h1 {
-    font-size: 7.2rem;
+    
 }
 h2 {
 

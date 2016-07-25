@@ -1,0 +1,35 @@
+//-------------------------
+//---------------MIXIN GRID
+//-------------------------
+
+
+// Import Grid specific variables
+@import 'varGrid';
+
+@mixin gridRow ($gutter: $gridGutter) {
+
+    margin: {
+        right: -$gutter * 1rem;
+        left : -$gutter * 1rem;
+    }
+
+    font-size: 0;
+}
+
+@mixin gridColumns ($gutter: $gridGutter, $cols: $numberOfColumns, $padding: $gridGutter) {
+
+    @for $i from 1 through $cols {
+        .col-#{$i}-#{$cols} {
+            display: inline-block;
+            width: percentage($i / $cols);
+            min-height: 1px;
+            padding: {
+                right: $padding * 1rem;
+                left : $padding * 1rem;
+            }
+
+            position: relative;
+        }
+    }
+
+}
