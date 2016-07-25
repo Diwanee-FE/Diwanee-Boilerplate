@@ -7,7 +7,7 @@
     "Milos Bjelcevic <milos.bjelcevic@diwanee.com>"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/IvanBuljovcic/Diwanee-boiler",
+  "homepage": "https://github.com/Diwanee-FE/Diwanee-Boilerplate",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -18,7 +18,6 @@
   "dependencies": {
     "jquery": "^2.2.4",
     "requirejs": "^2.2.0",
-    "velocity": "^1.2.3",
     "slick-carousel": "^1.6.0",
     "components-font-awesome": "^4.6.3"
   }
