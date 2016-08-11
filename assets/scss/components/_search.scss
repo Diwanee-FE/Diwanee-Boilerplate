@@ -3,38 +3,44 @@
 //-------------------------
 
 .search {
-    width: 20%;
+    @extend %clearfix;
+
+    width: 50rem;
+    height: 5rem;
+    margin: 0 0 0 auto;
+
     position: relative;
 
-    float: right;
     &__content {
+        display: inline-block;
         width: 0;
-        height: 5rem;
-
-        position: absolute;
-        top: 0;
+        height: 100%;
         float: right;
 
-        border: 0px solid black;
+        border: none;
+
+        transition: width .3s ease-in-out;
+
+        &.open {
+            width: 20rem;
+        }
     }
+
     &__button {
+        display: inline-block;
         width: 9rem;
-        height: 5rem;
-        padding-top: 0.8rem;
+        height: 100%;
+        float: right;
 
         position: relative;
-        float: right;
 
-        background-color: white;
+        background-color: transparent;
         border: 1px solid black;
 
         text-align: center;
-    }
-    .open {
-        width: 20rem;
 
-        border: 1px solid black;
-
-        transition: 0.3s all ease-in-out;
+        i {
+            line-height: 5rem;
+        }
     }
 }

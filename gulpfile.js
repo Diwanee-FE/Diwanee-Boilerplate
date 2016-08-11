@@ -123,7 +123,7 @@ gulp.task('server', function () {
     return gulp.src('./app')
                 .pipe(webserver({
                     port      : '1337',
-                    open      : true,
+                    open      : false,
                     livereload: true
                 }));
 });
