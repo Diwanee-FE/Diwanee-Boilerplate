@@ -2,23 +2,24 @@
 //---------------PAGINATION
 //-------------------------
 .pagination {
-    background: #FA0;
-
     text-align: center;
+
     li {
         display: inline-block;
     }
+
     a {
         display: block;
         padding: 0.5rem;
         margin: 0 1rem;
 
-        color: $colorWhite;
+        color: white;
         font-size: 3rem;
+
         &:hover,
         &:active,
         &:focus {
-            color: $colorBlack;
+            color: black;
         }
     }
 }

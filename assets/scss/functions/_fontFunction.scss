@@ -1,0 +1,14 @@
+// Retrieve font from $fonts map ie. `fontFunc(base, primary)`
+
+@function fontFunc($fontName, $fontVariant: null) {
+
+    // Dimension variant is optional
+    @if ($fontVariant != null) {
+
+        @return map-get(map-get($fonts, $fontName), $fontVariant);
+
+    } @else {
+        @return map-get($fonts, $fontName);
+    }
+
+}

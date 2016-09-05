@@ -11,11 +11,18 @@
         'base/variables/varColors';
 
 
+//------FUNCTIONS
+@import 'functions/colorFunction',
+		'functions/dimensionFunction',
+		'functions/fontFunction';
+
+
 //------MIXINS
 @import 'mixins/breakpoint/mixBreakpoints',
         'mixins/font face/mixFontFace',
         'mixins/placeholder/mixPlaceholder',
-        'mixins/grid/mixGrid';
+        'mixins/grid/mixGrid',
+		'mixins/transform/mixTransform';
 
 
 //------LIBRARY | REMOVE FROM 'master', THIS IS NOT NEEDED IN WEBEDIA
@@ -25,7 +32,8 @@
 
 //------BASE CONFIG
 @import 'base/reset',
-        'base/helpers',
+        'base/helpers/placeholders',
+		'base/helpers/common',
         'base/baseConfig',
         'base/typography';
 
@@ -37,17 +45,22 @@
 
 //------COMPONENTS
 @import 'components/buttons/button', // NOT CORE
-        'components/quotes/quotes'; // NOT CORE
+        'components/quotes/quotes';  // NOT CORE
 
 
 //------BLOCKS
-@import 'blocks/flag/flag', // NOT CORE
-        'blocks/navigation/navigation', // NOT CORE
-        'blocks/pagination/pagination', // NOT CORE
+@import 'blocks/navigation/navigation', 	// NOT CORE
+        'blocks/pagination/pagination', 	// NOT CORE
         'blocks/stickySocial/stickySocial', // NOT CORE
         'blocks/header/header',
         'blocks/footer/footer',
         'blocks/sliders/slick/slickSlider'; // NOT CORE
+
+	//---BLOCKS | FLAGS
+	@import 'blocks/flag/flag',				// NOT CORE
+			'blocks/flag/flagBlock',		// NOT CORE
+			'blocks/flag/flagLarge',		// NOT CORE
+			'blocks/flag/flagRight';		// NOT CORE
 
 
 //------PAGES

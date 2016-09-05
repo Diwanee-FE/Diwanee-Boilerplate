@@ -1,0 +1,14 @@
+// Retrieve dimension from $dimensions map ie. `dimFunc(base, primary)`
+
+@function dimFunc($dimensionName, $dimensionVariant: null) {
+
+    // Dimension variant is optional
+    @if ($dimensionVariant != null) {
+
+        @return map-get(map-get($dimensions, $dimensionName), $dimensionVariant);
+
+    } @else {
+        @return map-get($dimensions, $dimensionName);
+    }
+
+}
