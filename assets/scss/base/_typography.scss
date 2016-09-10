@@ -7,7 +7,7 @@
 
 //------FONT SIZES
 html {
-    $fontSizePX: $baseFontSize + 'px';
+    $fontSizePX: dimFunc(font, base) + 'px';
     font-size  : #{$fontSizePX};
 
     @include breakpoint (tablet) {
@@ -19,7 +19,7 @@ html {
 }
 body {
     font-size: 100%;
-    font-family: $baseFont;
+    font-family: fontFunc(base, default), #{fontFunc(default)};
 }
 
 //------DEFAULT STYLES
@@ -37,7 +37,7 @@ u {
 
 //------STYLES
 h1 {
-    
+
 }
 h2 {
 

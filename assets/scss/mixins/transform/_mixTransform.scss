@@ -1,0 +1,13 @@
+//-------------------------
+//----------TRANSFORM MIXIN
+//-------------------------
+
+// EXAMPLE
+//    @include transform (rotate(10deg));
+//    Default is 'translate(-50%, -50%)'
+//
+
+@mixin transform ($params: translate(-50%, -50%)) {
+        -ms-transform: $params;
+            transform: $params;
+}

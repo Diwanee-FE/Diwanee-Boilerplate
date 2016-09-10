@@ -17,12 +17,14 @@
     position: absolute;
     top: 50%;
 
-    transform: translateY(-50%);
+	@include transform(translate(-50%));
 
-    z-index: $levelMiddle;
+    z-index: $levelHill;
+
     &.slick-next {
         right: 0;
     }
+
     &.slick-prev {
         left: 0;
     }

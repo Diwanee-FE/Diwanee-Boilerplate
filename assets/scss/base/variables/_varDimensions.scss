@@ -1,6 +1,12 @@
 //-------------------------
 //---VARIABLES | DIMENSIONS
 //-------------------------
-$baseFontSize: 10;
+$dimensions: (
+	font: (
+		base: 10
+	),
 
-$largeImageFlagWidth: 50%;
+	flag: (
+		largeImage: 50%
+	)
+);

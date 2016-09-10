@@ -1,6 +1,10 @@
 //-------------------------
-//------VARIABLES | Z INDEX
+//------VARIABLES | Z-INDEX
 //-------------------------
-$levelBottom: 1;
-$levelMiddle: 2;
-$levelTop   : 3;
+$levelHole 		  : -1;
+$levelGround      : 1;
+$levelHill        : 2;
+$levelMountain    : 3;
+$levelAtmosphere  : 4;
+$levelStratosphere: 5;
+$levelSpace       : 6;

@@ -3,10 +3,11 @@
 //-------------------------
 .flag--large {
     @extend .flag;
+
     .flag__media {
-        width: $largeImageFlagWidth;
+		width: dimFunc(flag, largeImage);
     }
     .flag__body {
-        width: 100% - $largeImageFlagWidth;
+        width: 100% - dimFunc(flag, largeImage);
     }
 }

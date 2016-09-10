@@ -1,22 +1,23 @@
 //-------------------------
 //-------VARIABLES | COLORS
 //-------------------------
-$colorWhite: #FFF;
-$colorBlack: #000;
-$colorRed  : #F00;
-$colorGreen: #0F0;
-$colorBlue : #00F;
-$colorMain : $colorWhite;
-
-
 $colors: (
-    base: (
-        white: #FFF,
-        black: #000
-    ),
 
-    body: (
-        container: #FFF,
-        text: #1E1E1E
-    )
+	brands: (
+		facebook : #3B5998,
+		twitter  : #1DA1F2,
+		whatsapp : #43D854,
+		youtube  : #CD201F,
+		messenger: #0084FF
+	),
+
+	header: (
+		text: #000,
+		background: #EFEFEF
+	)
 );
+
+
+//---Variables used in the @for loop for different brand colors
+$brandArray : facebook, twitter, whatsapp, youtube, messenger, shuffle;
+$brandLength: length($brandArray) + 1;

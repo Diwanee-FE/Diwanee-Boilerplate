@@ -1,7 +1,12 @@
 //---------------------------
 //----------VARIABLES | FONTS
 //---------------------------
-$fontDefault     : Arial, Helvetica, Tahoma, sans-serif;
-$baseFont        : "Roboto", $fontDefault;
-$baseFont--bold  : "", $fontDefault;
-$baseFont--italic: "", $fontDefault;
+$fonts: (
+	default: 'Arial, Helvetica, Tahoma, sans-serif',
+
+	base: (
+		default: 'Roboto',
+		bold   : 'Roboto Bold',
+		italic : 'Roboto Italic'
+	)
+);
