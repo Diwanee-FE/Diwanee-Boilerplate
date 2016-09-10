@@ -11,6 +11,10 @@
         'base/variables/varColors';
 
 
+//------FUNCTIONS
+@import 'functions/map/funcMapGet';
+
+
 //------MIXINS
 @import 'mixins/breakpoint/mixBreakpoints',
         'mixins/font face/mixFontFace',
@@ -59,3 +63,8 @@
 
 //------IE FIXES
 @import 'ie/ie';
+
+
+body {
+    background-color: mapGet(colors, container, text);
+}

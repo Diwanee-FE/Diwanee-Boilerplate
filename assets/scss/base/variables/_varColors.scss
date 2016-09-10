@@ -7,3 +7,16 @@ $colorRed  : #F00;
 $colorGreen: #0F0;
 $colorBlue : #00F;
 $colorMain : $colorWhite;
+
+
+$colors: (
+    base: (
+        white: #FFF,
+        black: #000
+    ),
+
+    body: (
+        container: #FFF,
+        text: #1E1E1E
+    )
+);
